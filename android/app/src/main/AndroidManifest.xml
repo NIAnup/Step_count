@@ -19,7 +19,6 @@
             android:name=".MainActivity"
             android:usesCleartextTraffic="true"
             android:requestLegacyExternalStorage="true"
-            android:permission="android.permission.START_VIEW_PERMISSION_USAGE"
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""

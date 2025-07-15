@@ -22,8 +22,8 @@ class StepService {
       }
 
       bool authorized = await _health.requestAuthorization(
-        types,
-        permissions: permissions,
+        [HealthDataType.STEPS, HealthDataType.HEART_RATE],
+        permissions: [HealthDataAccess.READ],
       );
 
       if (authorized) {
