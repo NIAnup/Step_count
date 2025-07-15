@@ -9,6 +9,7 @@ import 'bindings/step_binding.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Permission.activityRecognition.request();
+  await Permission.sensors.request();
   Get.put(StepController());
   runApp(MyApp());
 }
